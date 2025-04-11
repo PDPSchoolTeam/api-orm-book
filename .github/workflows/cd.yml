@@ -21,5 +21,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            cd /home/api-orm-book
             git pull origin main
 
