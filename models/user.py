@@ -8,3 +8,4 @@ class User(Model):
     email = fields.CharField(max_length=100, unique=True)
     username = fields.CharField(max_length=100, unique=True)
     created_at = fields.DatetimeField(auto_now_add=True)
+

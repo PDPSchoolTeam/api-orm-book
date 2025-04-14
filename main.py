@@ -21,6 +21,11 @@ async def startup():
     print("DB Connected ✅")
 
 
+@app.get("/apps")
+async def apps_ts():
+    return {"message": "apps"}
+
+
 @app.get("/users", response_model=BaseResponse)
 async def get_users():
     users = await User.all()
